@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Find the PID and process name using pgrep
+pgrep -l bash
