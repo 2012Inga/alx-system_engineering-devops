@@ -1,4 +1,11 @@
+#!/usr/bin/env bash
+# SSH client configuration
+
 Host 34.224.4.195
     IdentityFile ~/.ssh/id_rsa
     PreferredAuthentications publickey
     PasswordAuthentication no
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
